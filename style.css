@@ -1,0 +1,137 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mountains+of+Christmas:wght@700&display=swap');
+body{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/026/750/034/non_2x/christmas-fir-branch-background-free-photo.jpg);
+    background-size: cover;
+    background-repeat: no repeat;
+    background-position: center;
+    height: 100vh;
+    line-height: 1.5;
+    align-items: center;
+}
+h2{
+font-family: 'Mountains of Christmas', serif;
+}
+.justifier{
+text-align: justify
+}
+.img_deg
+{
+    float: left;
+    width: 40%;
+    position: center;
+}
+
+.pos_cen
+{
+    position: left;
+    width: 70%;
+    left: 15%;
+    top: 20%;
+}
+button{
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: gold;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #075b2c;
+    transition: 0.3s;
+}
+
+button:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba (255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+button:active{
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient (circle farthest-corner at 10% 20%, rgba (255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2%);
+    transition: 0.5s;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+/*Hover Effect on Social Media Icons */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.3e,;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+
